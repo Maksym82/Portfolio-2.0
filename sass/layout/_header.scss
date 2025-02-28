@@ -1,0 +1,33 @@
+.header {
+  padding: 20px 0;
+}
+
+.logo {
+  font-family: $second-family;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+.logo span {
+  color: $color-accet-green;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+.menu__link {
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  //   color: $color-black;
+}
