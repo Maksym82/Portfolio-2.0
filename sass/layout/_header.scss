@@ -7,6 +7,12 @@
   padding: 20px 0;
 }
 
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
   font-family: $second-family;
   font-size: 24px;
@@ -25,7 +31,7 @@
   flex-direction: column;
   gap: 24px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 767.98px) {
     flex-direction: row;
     gap: 40px;
   }
@@ -67,7 +73,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .icon-menu {
     display: block;
     flex: 0 0 30px;
@@ -135,5 +141,11 @@
   .menu-open .menu__body,
   .menu-open .menu__body::before {
     left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .icon-menu {
+    display: none;
   }
 }
