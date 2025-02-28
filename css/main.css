@@ -139,6 +139,11 @@ input {
 }
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
   padding: 20px 0;
 }
 
@@ -176,6 +181,112 @@ input {
 }
 
 .menu__link {
+  position: relative;
   font-weight: 300;
   letter-spacing: 0.03em;
+  -webkit-transition: color 0.25s linear;
+  transition: color 0.25s linear;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+  color: #00b068;
+}
+
+.menu__link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #00b068;
+  -webkit-transition: width 0.25s linear;
+  transition: width 0.25s linear;
+  -webkit-transition: width 0.4s linear;
+}
+
+.menu__link:hover::after,
+.menu__link:focus::after {
+  width: 100%;
+  left: 0;
+}
+
+.icon-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .icon-menu {
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30px;
+            flex: 0 0 30px;
+    height: 18px;
+    position: relative;
+    z-index: 5;
+  }
+  .icon-menu span,
+  .icon-menu::before,
+  .icon-menu::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #292929;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .icon-menu::before {
+    top: 0;
+  }
+  .icon-menu::after {
+    bottom: 0;
+  }
+  .icon-menu span {
+    top: calc(50% - 1px);
+  }
+  .menu-open .icon-menu span {
+    width: 0;
+  }
+  .menu-open .icon-menu::before {
+    top: calc(50% - 1px);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .menu-open .icon-menu::after {
+    bottom: calc(50% - 1px);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .menu__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, right top, left top, from(#001024), color-stop(50%, #002555), to(#001024));
+    background: linear-gradient(270deg, #001024 0%, #002555 50%, #001024 100%);
+    left: -100%;
+    top: 0;
+    padding: 137px 15px 30px 15px;
+    overflow: auto;
+    -webkit-transition: left 0.3s linear;
+    transition: left 0.3s linear;
+  }
+  .menu__body::before {
+    content: "";
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 137px;
+    background: -webkit-gradient(linear, right top, left top, from(#001024), color-stop(50%, #002555), to(#001024));
+    background: linear-gradient(270deg, #001024 0%, #002555 50%, #001024 100%);
+    z-index: 2;
+  }
+  .menu-open .menu__body,
+  .menu-open .menu__body::before {
+    left: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
