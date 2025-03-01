@@ -130,11 +130,11 @@
 
   .menu__body {
     position: fixed;
-    top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background-image: url('../../images/header/decor-mobile-menu.png');
+    background-color: $color-white;
+    background-image: url('../images/header/decor-mobile-menu.png');
     background-repeat: no-repeat;
     background-size: 320px 704px;
     background-position: center;
