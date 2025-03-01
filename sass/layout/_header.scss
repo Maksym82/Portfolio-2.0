@@ -5,6 +5,10 @@
   width: 100%;
   z-index: 50;
   padding: 20px 0;
+
+  @media (min-width: 768px) {
+    padding: 32px 0;
+  }
 }
 
 .header__container {
@@ -21,6 +25,11 @@
   text-transform: uppercase;
   color: $color-black;
   z-index: 5;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    letter-spacing: 0.05em;
+  }
 }
 
 .logo span {
@@ -37,6 +46,7 @@
   @media (min-width: 767.98px) {
     flex-direction: row;
     gap: 40px;
+    padding-top: 0;
   }
 }
 
@@ -139,7 +149,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    height: 80px;
+    height: 64px;
     background-color: $color-white-dt;
     z-index: 2;
   }
