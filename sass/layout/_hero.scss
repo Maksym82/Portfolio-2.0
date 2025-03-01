@@ -45,6 +45,12 @@
   height: 92px;
   background-color: $color-light-accent;
   z-index: -1;
+  transition: background-color 0.25s linear;
+}
+
+.hero__button:hover::after,
+.hero__button:focus::after {
+  background-color: $color-accet-green;
 }
 
 .hero__text {
@@ -70,4 +76,16 @@
   max-width: 360px;
   padding: 32px 0;
   background-color: $color-light-grey;
+}
+
+.hero__soc-link {
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: $color-black;
+  transition: color 0.25s linear;
+
+  &:hover,
+  &:focus {
+    color: $color-accet-green;
+  }
 }
