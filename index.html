@@ -17,7 +17,7 @@
         <nav class="header__menu">
           <div class="menu__body">
             <ul class="menu__list">
-              <li><a class="menu__link" href="">About me</a></li>
+              <li><a class="menu__link" href="#about">About me</a></li>
               <li><a class="menu__link" href="">Projects</a></li>
               <li><a class="menu__link" href="">Contacts</a></li>
             </ul>
@@ -99,6 +99,41 @@
             >
           </li>
         </ul>
+      </section>
+      <!--About-->
+      <section class="about" id="about">
+        <div class="about__container">
+          <h2 class="section-title">About <span>me</span></h2>
+          <div class="about__image">
+            <picture>
+              <source
+                srcset="
+                  ./images/about/about-desktop@1x.webp 1x,
+                  ./images/about/about-desktop@2x.webp 2x
+                "
+                media="(min-width: 1280px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/about/about-tablet@1x.webp 1x,
+                  ./images/about/about-tablet@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <img
+                srcset="
+                  ./images/about/about-mobile@1x.webp 1x,
+                  ./images/about/about-mobile@2x.webp 2x
+                "
+                src="./images/about/about-mobile-1.jpg"
+                alt="Fullstack developer"
+                class="about-img"
+              />
+            </picture>
+          </div>
+        </div>
       </section>
     </main>
     <script src="./js/script.js"></script>

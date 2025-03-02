@@ -151,8 +151,20 @@ input {
   line-height: 1.23077;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: right;
+  text-align: left;
   color: #292929;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+  }
+}
+
+.section-title span {
+  color: #00b068;
 }
 
 .header {
