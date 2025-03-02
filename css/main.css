@@ -331,10 +331,17 @@ input {
 }
 .hero {
   padding-top: 80px;
+  background-image: url("../../images/hero/hero-decor-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 320px 604px;
+  background-position: top 10% right 25%;
 }
 @media (min-width: 768px) {
   .hero {
     padding-top: 96px;
+    background-image: url("../../images/hero/hero-decor-tablet.png");
+    background-size: 709px 901px;
+    background-position: top 20% right 25%;
   }
 }
 
@@ -346,6 +353,7 @@ input {
   text-transform: uppercase;
   color: #292929;
   margin-bottom: 40px;
+  margin-top: 96px;
 }
 @media (min-width: 360px) {
   .hero__title {
