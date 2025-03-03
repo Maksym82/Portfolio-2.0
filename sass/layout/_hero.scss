@@ -1,5 +1,6 @@
 .hero {
   padding-top: 80px;
+  padding-bottom: 80px;
   background-image: url("../../images/hero/hero-decor-mobile.png");
   background-repeat: no-repeat;
   background-size: 320px 604px;
@@ -7,6 +8,7 @@
 
   @media (min-width: 768px) {
     padding-top: 96px;
+    padding-bottom: 96px;
     background-image: url("../../images/hero/hero-decor-tablet.png");
     background-size: 709px 901px;
     background-position: top 45% right 25%;
