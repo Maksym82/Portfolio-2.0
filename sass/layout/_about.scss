@@ -1,11 +1,29 @@
 .about {
   padding-bottom: 80px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 124px;
+    background-image: url('../../images/about/about-decor.png');
+    background-repeat: no-repeat;
+    background-position: bottom 350px right 26px;
+  }
+}
+
+.about__content {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about-img {
   border-radius: 16px;
   max-width: 100%;
   margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    margin-top: 368px;
+    margin-right: 32px;
+    margin-bottom: 60px;
+  }
 }
 
 .about__title {
@@ -15,12 +33,27 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+  }
 }
 
 .about__description {
   font-weight: 300;
   letter-spacing: 0.03em;
   margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    max-width: 336px;
+  }
+}
+
+.about__education {
+    max-width: 336px;
+    margin-right: 32px;
 }
 
 .about__list:not(:last-child) {
@@ -29,12 +62,33 @@
 
 .about__list:last-child {
   margin-bottom: 80px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .about__item {
+  position: relative;
   margin-left: 32px;
 }
 
 .about__item:not(:last-child) {
   margin-bottom: 12px;
+}
+
+.about__text::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -17px;
+  border-radius: 1px;
+  width: 4px;
+  height: 4px;
+  background-color: $color-accet-green;
+}
+
+.about__text {
+  font-weight: 300;
+  letter-spacing: 0.03em;
 }
