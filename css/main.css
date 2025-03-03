@@ -577,7 +577,7 @@ input {
     padding-bottom: 124px;
     background-image: url("../../images/about/about-decor.png");
     background-repeat: no-repeat;
-    background-position: bottom 350px right 26px;
+    background-position: bottom 270px right 26px;
   }
 }
 
@@ -626,6 +626,7 @@ input {
 @media (min-width: 768px) {
   .about__description {
     max-width: 336px;
+    margin-bottom: 0;
   }
 }
 
