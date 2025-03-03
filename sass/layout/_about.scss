@@ -3,9 +3,13 @@
 
   @media (min-width: 768px) {
     padding-bottom: 124px;
-    background-image: url('../../images/about/about-decor.png');
+    background-image: url("../../images/about/about-decor.png");
     background-repeat: no-repeat;
     background-position: bottom 270px right 26px;
+  }
+
+  @media (min-width: 1280px) {
+    background-position: bottom 367px right 70px;
   }
 }
 
@@ -23,6 +27,13 @@
     margin-top: 368px;
     margin-right: 32px;
     margin-bottom: 60px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-top: 272px;
+    margin-right: 136px;
+    margin-left: 208px;
+    margin-bottom: 80px;
   }
 }
 
@@ -50,11 +61,24 @@
     max-width: 336px;
     margin-bottom: 0;
   }
+
+  @media (min-width: 1280px) {
+    max-width: 487px;
+  }
 }
 
-.about__education {
+@media (min-width: 768px) {
+  .about__education {
     max-width: 336px;
     margin-right: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about__education {
+    margin-right: 184px;
+    margin-left: 208px;
+  }
 }
 
 .about__list:not(:last-child) {
