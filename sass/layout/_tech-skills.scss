@@ -1,0 +1,43 @@
+// Stripes
+.tech-skills {
+  padding-bottom: 80px;
+}
+
+.stripe__wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__stripe {
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.33333;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-black;
+}
+
+.first__stripe {
+  background-color: $color-light-accent;
+  z-index: 10;
+  white-space: nowrap;
+  position: absolute;
+  top: 61px;
+  left: 1px;
+  right: 1px;
+}
+
+.stripe__list {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
