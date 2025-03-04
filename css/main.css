@@ -722,22 +722,35 @@ input {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 1.33333;
-  letter-spacing: 0.01em;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   text-align: center;
   color: #292929;
 }
+@media (min-width: 768px) {
+  .about__stripe {
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+  }
+}
 
 .first__stripe {
-  background-color: #bcdfd1;
-  z-index: 10;
-  white-space: nowrap;
   position: absolute;
-  top: 61px;
+  top: 0;
   left: 1px;
   right: 1px;
+  background-color: #bcdfd1;
+  padding: 32px 0;
+  z-index: 10;
+  white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .first__stripe {
+    padding: 40px 0;
+  }
 }
 
 .stripe__list {
@@ -748,4 +761,31 @@ input {
       -ms-flex-align: center;
           align-items: center;
   gap: 56px;
+}
+
+.first__stripe .stripe__list {
+  -webkit-animation: first-infinite 30s linear infinite;
+          animation: first-infinite 30s linear infinite;
+}
+
+@-webkit-keyframes first-infinite {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+}
+
+@keyframes first-infinite {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -18,26 +18,51 @@
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 1.33333;
-  letter-spacing: 0.01em;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   text-align: center;
   color: $color-black;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+  }
 }
 
 .first__stripe {
-  background-color: $color-light-accent;
-  z-index: 10;
-  white-space: nowrap;
   position: absolute;
-  top: 61px;
+  top: 0;
   left: 1px;
   right: 1px;
+  background-color: $color-light-accent;
+  padding: 32px 0;
+  z-index: 10;
+  white-space: nowrap;
+
+  @media (min-width: 768px) {
+    padding: 40px 0;
+  }
 }
 
 .stripe__list {
   display: flex;
   align-items: center;
   gap: 56px;
+}
+
+.first__stripe .stripe__list {
+  animation: first-infinite 30s linear infinite;
+}
+
+@keyframes first-infinite {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-40%);
+  }
 }
