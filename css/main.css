@@ -761,11 +761,12 @@ input {
       -ms-flex-align: center;
           align-items: center;
   gap: 56px;
+  padding-left: 50px;
 }
 
 .first__stripe .stripe__list {
-  -webkit-animation: first-infinite 30s linear infinite;
-          animation: first-infinite 30s linear infinite;
+  -webkit-animation: first-infinite 20s linear infinite;
+          animation: first-infinite 20s linear infinite;
 }
 
 @-webkit-keyframes first-infinite {
@@ -774,8 +775,8 @@ input {
             transform: translateX(0%);
   }
   100% {
-    -webkit-transform: translateX(-40%);
-            transform: translateX(-40%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
@@ -785,7 +786,22 @@ input {
             transform: translateX(0%);
   }
   100% {
-    -webkit-transform: translateX(-40%);
-            transform: translateX(-40%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
+}
+.stripe__item {
+  position: relative;
+}
+
+.black::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: -33px;
+  border-radius: 2px;
+  padding-left: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: #00b068;
 }/*# sourceMappingURL=main.css.map */
