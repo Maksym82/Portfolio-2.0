@@ -1,6 +1,14 @@
 // Stripes
 .tech-skills {
   padding-bottom: 80px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 124px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-bottom: 164px;
+  }
 }
 
 .stripe__wrapper {

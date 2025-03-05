@@ -696,6 +696,16 @@ input {
 .tech-skills {
   padding-bottom: 80px;
 }
+@media (min-width: 768px) {
+  .tech-skills {
+    padding-bottom: 124px;
+  }
+}
+@media (min-width: 1280px) {
+  .tech-skills {
+    padding-bottom: 164px;
+  }
+}
 
 .stripe__wrapper {
   position: relative;
