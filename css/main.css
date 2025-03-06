@@ -147,13 +147,18 @@ input {
 .section-title {
   font-family: "Impact", sans-serif;
   font-weight: 400;
-  font-size: 52px;
+  font-size: 50px;
   line-height: 1.23077;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
   color: #292929;
   margin-bottom: 40px;
+}
+@media (min-width: 360px) {
+  .section-title {
+    font-size: 52px;
+  }
 }
 @media (min-width: 768px) {
   .section-title {
@@ -894,11 +899,30 @@ input {
 .projects-title {
   text-align: center;
 }
+@media (min-width: 768px) {
+  .projects-title {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .projects-title {
+    margin-bottom: 80px;
+  }
+}
+
+.projects__item:not(:last-child) {
+  margin-bottom: 40px;
+}
 
 .projects-img {
   max-width: 100%;
   border-radius: 16px;
   margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+  .projects-img {
+    margin-bottom: 16px;
+  }
 }
 
 .project__technology {
@@ -906,7 +930,25 @@ input {
   letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
+@media (min-width: 768px) {
+  .project__technology {
+    margin-bottom: 20px;
+  }
+}
 
+@media (min-width: 768px) {
+  .project__name-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .project__name {
   font-weight: 500;
   font-size: 32px;
@@ -914,6 +956,14 @@ input {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .project__name {
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+    margin-bottom: 0;
+  }
 }
 
 .project__link {
@@ -932,4 +982,9 @@ input {
   background-color: #e4e5e6;
   font-weight: 500;
   letter-spacing: 0.03em;
+  -webkit-transition: background-color 0.25s linear;
+  transition: background-color 0.25s linear;
+}
+.project__link:hover, .project__link:focus {
+  background-color: #bbb;
 }/*# sourceMappingURL=main.css.map */

@@ -1,13 +1,17 @@
 .section-title {
   font-family: $second-family;
   font-weight: 400;
-  font-size: 52px;
+  font-size: 50px;
   line-height: 1.23077;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
   color: $color-black;
   margin-bottom: 40px;
+
+  @media (min-width: 360px) {
+    font-size: 52px;
+  }
 
   @media (min-width: 768px) {
     font-size: 108px;
