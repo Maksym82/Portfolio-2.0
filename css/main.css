@@ -906,20 +906,6 @@ input {
   display: inline-block;
 }
 
-.projects__container {
-  margin-bottom: 40px;
-}
-@media (min-width: 768px) {
-  .projects__container {
-    margin-bottom: 60px;
-  }
-}
-@media (min-width: 1280px) {
-  .projects__container {
-    margin-bottom: 80px;
-  }
-}
-
 .projects-title {
   text-align: center;
 }
@@ -1053,7 +1039,7 @@ input {
   -webkit-transition: color 0.25s linear;
   transition: color 0.25s linear;
 }
-#load-more:hover, #load-more:focus {
+#load-more:hover {
   color: #00b068;
 }
 

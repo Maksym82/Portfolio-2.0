@@ -20,18 +20,6 @@
   display: inline-block;
 }
 
-.projects__container {
-  margin-bottom: 40px;
-
-  @media (min-width: 768px) {
-    margin-bottom: 60px;
-  }
-
-  @media (min-width: 1280px) {
-    margin-bottom: 80px;
-  }
-}
-
 .projects-title {
   text-align: center;
 
@@ -147,14 +135,13 @@
   cursor: pointer;
   transition: color 0.25s linear;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: $color-accet-green;
   }
 }
 
 #load-more::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
