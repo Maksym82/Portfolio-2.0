@@ -10,6 +10,16 @@
   }
 }
 
+.projects .projects__container .projects__item {
+  display: none;
+}
+
+.projects .projects__container .projects__item:nth-child(1),
+.projects .projects__container .projects__item:nth-child(2),
+.projects .projects__container .projects__item:nth-child(3) {
+  display: inline-block;
+}
+
 .projects__container {
   margin-bottom: 40px;
 
