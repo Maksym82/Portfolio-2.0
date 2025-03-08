@@ -10,6 +10,18 @@
   }
 }
 
+.projects__container {
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 80px;
+  }
+}
+
 .projects-title {
   text-align: center;
 
@@ -108,4 +120,36 @@
   &:focus {
     background-color: $color-hover-grey;
   }
+}
+
+#load-more {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-black;
+  margin: 0 auto;
+  padding: 12px 24px;
+  width: 155px;
+  height: 52px;
+  cursor: pointer;
+  transition: color 0.25s linear;
+
+  &:hover,
+  &:focus {
+    color: $color-accet-green;
+  }
+}
+
+#load-more::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border: 2px solid $color-accet-green;
+  display: block;
+  height: 2px;
+  width: 100%;
 }
