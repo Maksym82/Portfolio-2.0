@@ -1,0 +1,30 @@
+.benefits {
+  padding-bottom: 80px;
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.benefits__icon {
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  background: $color-light-accent;
+  margin-bottom: 16px;
+}
+
+.benefits__expertise {
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.benefits__text {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
