@@ -1057,7 +1057,22 @@ input {
 .benefits {
   padding-bottom: 80px;
 }
+@media (min-width: 768px) {
+  .benefits {
+    padding-bottom: 124px;
+  }
+}
+@media (min-width: 1280px) {
+  .benefits {
+    padding-bottom: 164px;
+  }
+}
 
+@media (min-width: 1280px) {
+  .benefits__content {
+    position: relative;
+  }
+}
 @media (min-width: 768px) {
   .benefits-title {
     margin-bottom: 0;
@@ -1120,6 +1135,12 @@ input {
     row-gap: 32px;
   }
 }
+@media (min-width: 1280px) {
+  .benefits__list {
+    position: absolute;
+    top: 274px;
+  }
+}
 .benefits__icon {
   border-radius: 8px;
   width: 48px;
@@ -1135,6 +1156,12 @@ input {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .benefits__expertise {
+    font-size: 20px;
+    line-height: 1.6;
+  }
 }
 
 .benefits__text {

@@ -1,5 +1,19 @@
 .benefits {
   padding-bottom: 80px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 124px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-bottom: 164px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .benefits__content {
+    position: relative;
+  }
 }
 
 @media (min-width: 768px) {
@@ -66,6 +80,13 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .benefits__list {
+    position: absolute;
+    top: 274px;
+  }
+}
+
 .benefits__icon {
   border-radius: 8px;
   width: 48px;
@@ -81,6 +102,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 16px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.6;
+  }
 }
 
 .benefits__text {
