@@ -7,12 +7,10 @@
 
   @media (min-width: 1280px) {
     padding-bottom: 164px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .benefits__content {
-    position: relative;
+    background-image: url('../../images/benefits/benefits-decor.svg');
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+    background-position: top 20px right 20px;
   }
 }
 
@@ -77,13 +75,6 @@
     grid-template-rows: auto auto;
     column-gap: 32px;
     row-gap: 32px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .benefits__list {
-    position: absolute;
-    top: 274px;
   }
 }
 

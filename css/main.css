@@ -1065,14 +1065,13 @@ input {
 @media (min-width: 1280px) {
   .benefits {
     padding-bottom: 164px;
+    background-image: url("../../images/benefits/benefits-decor.svg");
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+    background-position: top 20px right 20px;
   }
 }
 
-@media (min-width: 1280px) {
-  .benefits__content {
-    position: relative;
-  }
-}
 @media (min-width: 768px) {
   .benefits-title {
     margin-bottom: 0;
@@ -1133,12 +1132,6 @@ input {
        -moz-column-gap: 32px;
             column-gap: 32px;
     row-gap: 32px;
-  }
-}
-@media (min-width: 1280px) {
-  .benefits__list {
-    position: absolute;
-    top: 274px;
   }
 }
 .benefits__icon {
