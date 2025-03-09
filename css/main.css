@@ -903,7 +903,8 @@ input {
 .projects .projects__container .projects__item:nth-child(1),
 .projects .projects__container .projects__item:nth-child(2),
 .projects .projects__container .projects__item:nth-child(3) {
-  display: inline-block;
+  display: block;
+  margin: 0 auto 80px;
 }
 
 .projects-title {
