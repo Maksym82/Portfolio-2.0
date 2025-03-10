@@ -1,9 +1,33 @@
 .faq {
   padding-bottom: 80px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 124px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-bottom: 164px;
+    background-image: url("../../images/faq/faq-desktop-decor.svg");
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+    background-position: bottom 164px left 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .faq-title {
+    max-width: 525px;
+    margin-bottom: -125px;
+  }
 }
 
 .accordion__list {
   width: 100%;
+
+  @media (min-width: 1280px) {
+    max-width: 600px;
+    margin-left: auto;
+  }
 }
 
 .accordion__button {
@@ -28,18 +52,14 @@
   border-radius: 16px;
 }
 
-.accordion__button.active {
-  border-radius: 16px;
-}
-
 .arrow {
-  transition: transform 0.3s;
+  transition: transform 0.2s ease-in-out;
 }
 
 .accordion__content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s linear;
+  transition: max-height 0.2s ease-in-out;
 }
 
 .accordion__text {
@@ -49,8 +69,10 @@
 }
 
 .accordion__item.active .accordion__content {
-  max-height: 300px;
+  max-height: 280px;
 }
 .accordion__item.active .arrow {
   transform: rotate(180deg);
 }
+
+
