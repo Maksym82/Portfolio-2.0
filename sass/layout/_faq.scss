@@ -1,0 +1,56 @@
+.faq {
+  padding-bottom: 80px;
+}
+
+.accordion__list {
+  width: 100%;
+}
+
+.accordion__button {
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.accordion__item.active {
+  background-color: $color-light-accent;
+  border-radius: 16px;
+}
+
+.accordion__button.active {
+  border-radius: 16px;
+}
+
+.arrow {
+  transition: transform 0.3s;
+}
+
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s linear;
+}
+
+.accordion__text {
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  padding: 0 15px 15px;
+}
+
+.accordion__item.active .accordion__content {
+  max-height: 300px;
+}
+.accordion__item.active .arrow {
+  transform: rotate(180deg);
+}
