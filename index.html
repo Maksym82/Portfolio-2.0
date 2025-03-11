@@ -11,6 +11,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!--Styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -734,7 +739,9 @@
       <!--Faq-->
       <section class="faq">
         <div class="faq__container">
-          <h2 class="section-title faq-title">frequently asked <span>question</span></h2>
+          <h2 class="section-title faq-title">
+            frequently asked <span>question</span>
+          </h2>
           <div>
             <ul class="accordion__list">
               <!--Item #1-->
@@ -762,10 +769,10 @@
                 <div class="accordion__content">
                   <p class="accordion__text">
                     The terms of project implementation depend to a large extent
-                    on a number of factors, such as the scope of the project, its
-                    complexity, and the availability of resources. Determining
-                    exact deadlines is a difficult task, and it usually occurs
-                    during the planning phase of the project.
+                    on a number of factors, such as the scope of the project,
+                    its complexity, and the availability of resources.
+                    Determining exact deadlines is a difficult task, and it
+                    usually occurs during the planning phase of the project.
                   </p>
                 </div>
               </li>
@@ -808,18 +815,18 @@
                 <div class="accordion__content">
                   <p class="accordion__text">
                     The terms of project implementation depend to a large extent
-                    on a number of factors, such as the scope of the project, its
-                    complexity, and the availability of resources. Determining
-                    exact deadlines is a difficult task, and it usually occurs
-                    during the planning phase of the project.
+                    on a number of factors, such as the scope of the project,
+                    its complexity, and the availability of resources.
+                    Determining exact deadlines is a difficult task, and it
+                    usually occurs during the planning phase of the project.
                   </p>
                 </div>
               </li>
               <!--Item #6-->
               <li class="accordion__item">
                 <button class="accordion__button">
-                  What does the process of developing a software product look like
-                  from idea to implementation?
+                  What does the process of developing a software product look
+                  like from idea to implementation?
                   <span class="arrow"><i class="fas fa-chevron-down"></i></span>
                 </button>
                 <div class="accordion__content">
@@ -833,10 +840,40 @@
               </li>
             </ul>
           </div>
-         
+        </div>
+      </section>
+      <!--Reviews-->
+      <section class="reviews">
+        <div class="reviews__container">
+          <h2 class="section-title">reviews</h2>
+          <!-- Slider main container -->
+          <div class="swiper swiper-reviews">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide reviews__swiper-slide">
+                <p class="reviews__text">
+                  Work with was extraordinary! He turned out to be a very
+                  competent and responsible specialist. The projects were
+                  completed on time and the result exceeded my expectations
+                </p>
+                <div class="reviews__box">
+                  <img class="reviews__img" src="./images/reviews/image-1.jpg" alt="Natalia Shevchenko">
+                  <p class="reviews__name">Natalia Shevchenko</p>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/load-more.js"></script>
     <script src="./js/faq.js"></script>
