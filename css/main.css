@@ -1246,6 +1246,7 @@ input {
 
 .reviews {
   padding-bottom: 80px;
+  position: relative;
 }
 @media (min-width: 768px) {
   .reviews {
@@ -1259,7 +1260,6 @@ input {
 }
 
 .reviews__swiper-slide {
-  position: relative;
   background-color: #e4e5e6;
   padding: 32px;
   border-radius: 16px;
@@ -1300,14 +1300,35 @@ input {
   display: none;
 }
 
+.swiper-btn-box {
+  position: absolute;
+  bottom: 35px;
+  right: 130px;
+}
+
 .swiper-button-prev {
   position: absolute;
-  bottom: -30px;
-  right: 40px;
   border: 1px solid #292929;
   border-radius: 8px;
   padding: 12px;
   width: 40px;
   height: 40px;
   color: #292929;
+}
+
+.swiper-button-next {
+  position: absolute;
+  bottom: -30px;
+  right: -100px;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  color: #292929;
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  background-color: #00b068;
 }/*# sourceMappingURL=main.css.map */

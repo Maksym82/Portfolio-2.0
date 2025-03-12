@@ -1,5 +1,6 @@
 .reviews {
   padding-bottom: 80px;
+  position: relative;
 
   @media (min-width: 768px) {
     padding-bottom: 124px;
@@ -11,7 +12,6 @@
 }
 
 .reviews__swiper-slide {
-  position: relative;
   background-color: $color-light-grey;
   padding: 32px;
   border-radius: 16px;
@@ -48,20 +48,35 @@
   display: none;
 }
 
-// .swiper-btn-box {
-//   position: absolute;
-//   bottom: -30px;
-//   right: 40px;
-// }
+.swiper-btn-box {
+  position: absolute;
+  bottom: 35px;
+  right: 130px;
+}
 
 .swiper-button-prev {
   position: absolute;
-  bottom: -30px;
-  right: 40px;
   border: 1px solid $color-black;
   border-radius: 8px;
   padding: 12px;
   width: 40px;
   height: 40px;
   color: $color-black;
+}
+
+.swiper-button-next {
+  position: absolute;
+  bottom: -30px;
+  right: -100px;
+  border: 1px solid $color-black;
+  border-radius: 8px;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  color: $color-black;
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  background-color: $color-accet-green;
 }
