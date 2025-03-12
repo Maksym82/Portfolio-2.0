@@ -1259,6 +1259,7 @@ input {
 }
 
 .reviews__swiper-slide {
+  position: relative;
   background-color: #e4e5e6;
   padding: 32px;
   border-radius: 16px;
@@ -1297,12 +1298,6 @@ input {
 
 .swiper-button-next::after {
   display: none;
-}
-
-.swiper-btn-box {
-  position: absolute;
-  bottom: -30px;
-  right: 40px;
 }
 
 .swiper-button-prev {

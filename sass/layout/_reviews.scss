@@ -11,6 +11,7 @@
 }
 
 .reviews__swiper-slide {
+  position: relative;
   background-color: $color-light-grey;
   padding: 32px;
   border-radius: 16px;
@@ -47,11 +48,11 @@
   display: none;
 }
 
-.swiper-btn-box {
-  position: absolute;
-  bottom: -30px;
-  right: 40px;
-}
+// .swiper-btn-box {
+//   position: absolute;
+//   bottom: -30px;
+//   right: 40px;
+// }
 
 .swiper-button-prev {
   position: absolute;
