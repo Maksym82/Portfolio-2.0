@@ -1305,6 +1305,12 @@ input {
   bottom: 35px;
   right: 130px;
 }
+@media (min-width: 768px) {
+  .swiper-btn-box {
+    bottom: 76px;
+    right: 150px;
+  }
+}
 
 .swiper-button-prev {
   position: absolute;

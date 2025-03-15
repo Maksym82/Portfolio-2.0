@@ -52,6 +52,11 @@
   position: absolute;
   bottom: 35px;
   right: 130px;
+
+  @media (min-width: 768px) {
+    bottom: 76px;
+    right: 150px;
+  }
 }
 
 .swiper-button-prev {
