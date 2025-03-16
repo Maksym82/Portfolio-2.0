@@ -1259,6 +1259,10 @@ input {
   }
 }
 
+.reviews-title {
+  text-align: center;
+}
+
 .reviews__swiper-slide {
   background-color: #e4e5e6;
   padding: 32px;
