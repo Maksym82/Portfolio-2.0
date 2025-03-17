@@ -1245,18 +1245,7 @@ input {
 }
 
 .reviews {
-  padding-bottom: 80px;
   position: relative;
-}
-@media (min-width: 768px) {
-  .reviews {
-    padding-bottom: 124px;
-  }
-}
-@media (min-width: 1280px) {
-  .reviews {
-    padding-bottom: 164px;
-  }
 }
 
 .reviews-title {
@@ -1344,7 +1333,20 @@ input {
 }
 
 .contacts {
+  padding-top: 80px;
   padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .contacts {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
+}
+@media (min-width: 1280px) {
+  .contacts {
+    padding-top: 164px;
+    padding-bottom: 164px;
+  }
 }
 
 .contacts__text {

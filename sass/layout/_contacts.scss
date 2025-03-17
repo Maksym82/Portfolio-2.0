@@ -1,5 +1,16 @@
 .contacts {
+  padding-top: 80px;
   padding-bottom: 80px;
+
+  @media (min-width: 768px) {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 164px;
+    padding-bottom: 164px;
+  }
 }
 
 .contacts__text {
