@@ -5,6 +5,10 @@
   @media (min-width: 768px) {
     padding-top: 124px;
     padding-bottom: 124px;
+    background-image: url('../../images/contacts/contacts-decor.svg');
+    background-repeat: no-repeat;
+    background-size: 336px 260px;
+    background-position: top 100px right 30px;
   }
 
   @media (min-width: 1280px) {
@@ -19,6 +23,12 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 488px;
+  }
 }
 
 .contacts__list {
@@ -26,6 +36,11 @@
   flex-direction: column;
   gap: 16px;
   margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
 }
 
 .contacts__link {
@@ -63,6 +78,11 @@
   letter-spacing: 0.03em;
   color: $color-black;
   outline: none;
+  resize: none;
+}
+
+.form__textarea::placeholder {
+  color: rgba(233, 47, 47, 0.5);
 }
 
 .form__button {
@@ -76,4 +96,9 @@
   letter-spacing: 0.03em;
   text-align: center;
   color: $color-white;
+
+  @media (min-width: 768px) {
+    width: 173px;
+    height: 48px;
+  }
 }
