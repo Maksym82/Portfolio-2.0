@@ -1301,7 +1301,7 @@ input {
 }
 @media (min-width: 768px) {
   .swiper-btn-box {
-    bottom: -76px;
+    bottom: -56px;
     right: 150px;
   }
 }
@@ -1334,7 +1334,7 @@ input {
 }
 
 .contacts {
-  padding-top: 80px;
+  padding-top: 144px;
   padding-bottom: 80px;
 }
 @media (min-width: 768px) {
