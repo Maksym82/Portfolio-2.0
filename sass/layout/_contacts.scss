@@ -17,6 +17,12 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .contacts-title {
+    max-width: 515px;
+  }
+}
+
 .contacts__text {
   font-size: 18px;
   line-height: 1.55556;
@@ -83,6 +89,7 @@
 
 .form__textarea::placeholder {
   color: rgba(233, 47, 47, 0.5);
+  font-family: $font-family;
 }
 
 .form__button {
