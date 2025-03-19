@@ -23,6 +23,13 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .contacts__content {
+    display: flex;
+    gap: 136px;
+  }
+}
+
 .contacts__text {
   font-size: 18px;
   line-height: 1.55556;
@@ -35,6 +42,10 @@
     line-height: 1.6;
     max-width: 488px;
   }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 120px;
+  }
 }
 
 .contacts__list {
@@ -46,6 +57,11 @@
   @media (min-width: 768px) {
     flex-direction: row;
     margin-bottom: 60px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 0;
+    flex-direction: column;
   }
 }
 
