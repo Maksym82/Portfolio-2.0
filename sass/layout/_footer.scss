@@ -4,6 +4,15 @@
   border-top: 1px solid $color-light-grey;
 }
 
+@media (min-width: 1280px) {
+  .footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+
 .footer__logo {
   font-family: $second-family;
   font-size: 32px;
@@ -11,6 +20,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 32px;
+
+  @media (min-width: 1280px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__logo span {
@@ -27,6 +40,10 @@
     flex-direction: row;
     gap: 40px;
   }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__link {
@@ -40,6 +57,7 @@
   text-align: center;
 
   @media (min-width: 768px) {
-    text-align: end;
+    width: 351px;
+    margin-right: 0;
   }
 }
