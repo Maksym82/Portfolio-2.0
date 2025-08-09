@@ -43,8 +43,6 @@
   font-size: 25px;
 }
 
-
-
 .menu__list {
   display: flex;
   flex-direction: column;
@@ -104,6 +102,20 @@
     z-index: 5;
   }
 
+  /* Тёмная тема */
+  body.dark-theme .logo {
+    color: $color-white;
+  }
+  body.dark-theme .icon-menu::before {
+    background-color: $color-white;
+  }
+  body.dark-theme .icon-menu::after {
+    background-color: $color-white;
+  }
+  body.dark-theme .icon-menu>span {
+    background-color: $color-white;
+  }
+
   .icon-menu span,
   .icon-menu::before,
   .icon-menu::after {
@@ -152,6 +164,18 @@
     transition: left 0.3s linear;
   }
 
+  body.dark-theme .menu__body {
+    background-color: $color-black-dt;
+  }
+
+  body.dark-theme .menu__link {
+    color: $color-white;
+  }
+
+  body.dark-theme .menu__body::before {
+    background-color: $color-black-dt;
+  }
+
   .menu__body::before {
     content: "";
     width: 100%;
@@ -173,18 +197,4 @@
   .icon-menu {
     display: none;
   }
-}
-
-/* Тёмная тема */
-body.dark-theme .logo {
-  color: $color-white;
-}
-body.dark-theme button>span  {
-  background-color: $color-white;
-}
-body.dark-theme .icon-menu::before  {
-  background-color: $color-white;
-}
-body.dark-theme .icon-menu::after  {
-  background-color: $color-white;
 }

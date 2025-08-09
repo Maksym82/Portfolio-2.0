@@ -29,6 +29,30 @@
   }
 }
 
+body.dark-theme .hero__title {
+  color: $color-white;
+}
+
+body.dark-theme .hero__button {
+  color: $color-white;
+}
+
+body.dark-theme .hero__button::after {
+  background-color: $color-accet-green-dt;
+}
+
+body.dark-theme .hero__text {
+  color: $color-white-dt;
+}
+
+body.dark-theme .hero__soc-list {
+  background-color: $color-charcoal-dt;
+  color: $color-white-dt;
+}
+body.dark-theme .hero__soc-link {
+  color: $color-white-dt;
+}
+
 .hero__title {
   font-family: $second-family;
   font-size: 60px;
