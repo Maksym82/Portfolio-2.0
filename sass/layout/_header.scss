@@ -43,6 +43,14 @@
   font-size: 25px;
 }
 
+/* Тёмная тема */
+body.dark-theme {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --button-bg: #333333;
+  --button-text: #ffffff;
+}
+
 .menu__list {
   display: flex;
   flex-direction: column;
