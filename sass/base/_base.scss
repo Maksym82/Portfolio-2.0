@@ -27,6 +27,12 @@ body {
   background-color: $color-white-dt;
 }
 
+/* Тёмная тема */
+body.dark-theme {
+  background-color: $color-black-dt;
+  color: $color-white;
+}
+
 html {
   scroll-behavior: smooth;
 }

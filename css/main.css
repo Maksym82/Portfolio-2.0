@@ -85,6 +85,12 @@ body {
   background-color: #f0f0f0;
 }
 
+/* Тёмная тема */
+body.dark-theme {
+  background-color: #1e2023;
+  color: #f0f0f0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -221,18 +227,7 @@ input {
 }
 
 .button__theme {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
   font-size: 25px;
-}
-
-/* Тёмная тема */
-body.dark-theme {
-  --bg-color: #121212;
-  --text-color: #ffffff;
-  --button-bg: #333333;
-  --button-text: #ffffff;
 }
 
 .menu__list {
