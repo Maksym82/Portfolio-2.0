@@ -37,9 +37,9 @@
 }
 
 .button__theme {
-  // background-color: transparent;
-  // border: none;
-  // cursor: pointer;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   font-size: 25px;
 }
 
@@ -173,4 +173,18 @@
   .icon-menu {
     display: none;
   }
+}
+
+/* Тёмная тема */
+body.dark-theme .logo {
+  color: $color-white;
+}
+body.dark-theme button>span  {
+  background-color: $color-white;
+}
+body.dark-theme .icon-menu::before  {
+  background-color: $color-white;
+}
+body.dark-theme .icon-menu::after  {
+  background-color: $color-white;
 }

@@ -227,6 +227,9 @@ input {
 }
 
 .button__theme {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   font-size: 25px;
 }
 
@@ -369,6 +372,23 @@ input {
     display: none;
   }
 }
+/* Тёмная тема */
+body.dark-theme .logo {
+  color: #f0f0f0;
+}
+
+body.dark-theme button > span {
+  background-color: #f0f0f0;
+}
+
+body.dark-theme .icon-menu::before {
+  background-color: #f0f0f0;
+}
+
+body.dark-theme .icon-menu::after {
+  background-color: #f0f0f0;
+}
+
 .hero {
   padding-top: 80px;
   padding-bottom: 80px;
