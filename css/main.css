@@ -220,6 +220,13 @@ input {
   color: #00b068;
 }
 
+.button__theme {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
