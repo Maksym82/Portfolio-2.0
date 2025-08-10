@@ -180,6 +180,10 @@ input {
   color: #00b068;
 }
 
+body.dark-theme .section-title {
+  color: #f0f0f0;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -303,19 +307,6 @@ input {
     position: relative;
     z-index: 5;
   }
-  /* Тёмная тема */
-  body.dark-theme .logo {
-    color: #f0f0f0;
-  }
-  body.dark-theme .icon-menu::before {
-    background-color: #f0f0f0;
-  }
-  body.dark-theme .icon-menu::after {
-    background-color: #f0f0f0;
-  }
-  body.dark-theme .icon-menu > span {
-    background-color: #f0f0f0;
-  }
   .icon-menu span,
   .icon-menu::before,
   .icon-menu::after {
@@ -394,6 +385,23 @@ input {
     display: none;
   }
 }
+/* Тёмная тема */
+body.dark-theme .logo {
+  color: #f0f0f0;
+}
+
+body.dark-theme .icon-menu::before {
+  background-color: #f0f0f0;
+}
+
+body.dark-theme .icon-menu::after {
+  background-color: #f0f0f0;
+}
+
+body.dark-theme .icon-menu > span {
+  background-color: #f0f0f0;
+}
+
 .hero {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -1277,6 +1285,10 @@ body.dark-theme .hero__soc-link {
   border-radius: 16px;
 }
 
+body.dark-theme .accordion__item.active {
+  background-color: #14c57c;
+}
+
 .arrow {
   -webkit-transition: -webkit-transform 0.4s linear;
   transition: -webkit-transform 0.4s linear;
@@ -1318,6 +1330,10 @@ body.dark-theme .hero__soc-link {
   background-color: #e4e5e6;
   padding: 32px;
   border-radius: 16px;
+}
+
+body.dark-theme .reviews__swiper-slide {
+  background-color: #2a2d32;
 }
 
 .reviews__text {
@@ -1387,6 +1403,16 @@ body.dark-theme .hero__soc-link {
   width: 40px;
   height: 40px;
   color: #292929;
+}
+
+body.dark-theme .swiper-button-next {
+  color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+}
+
+body.dark-theme .swiper-button-prev {
+  color: #f0f0f0;
+  border: 1px solid #f0f0f0;
 }
 
 .swiper-button-prev:active,
@@ -1504,6 +1530,11 @@ body.dark-theme .hero__soc-link {
   outline: none;
 }
 
+body.dark-theme .form__input {
+  background-color: #2a2d32;
+  color: #f0f0f0;
+}
+
 .form__textarea {
   border-radius: 8px;
   padding: 16px;
@@ -1520,29 +1551,54 @@ body.dark-theme .hero__soc-link {
   resize: none;
 }
 
+body.dark-theme .form__textarea {
+  background-color: #2a2d32;
+  color: #f0f0f0;
+}
+
 .form__textarea::-webkit-input-placeholder {
-  color: rgba(233, 47, 47, 0.5);
+  color: #292929;
   font-family: "Poppins", sans-serif;
 }
 
 .form__textarea::-moz-placeholder {
-  color: rgba(233, 47, 47, 0.5);
+  color: #292929;
   font-family: "Poppins", sans-serif;
 }
 
 .form__textarea:-ms-input-placeholder {
-  color: rgba(233, 47, 47, 0.5);
+  color: #292929;
   font-family: "Poppins", sans-serif;
 }
 
 .form__textarea::-ms-input-placeholder {
-  color: rgba(233, 47, 47, 0.5);
+  color: #292929;
   font-family: "Poppins", sans-serif;
 }
 
 .form__textarea::placeholder {
-  color: rgba(233, 47, 47, 0.5);
+  color: #292929;
   font-family: "Poppins", sans-serif;
+}
+
+body.dark-theme .form__textarea::-webkit-input-placeholder {
+  color: #f0f0f0;
+}
+
+body.dark-theme .form__textarea::-moz-placeholder {
+  color: #f0f0f0;
+}
+
+body.dark-theme .form__textarea:-ms-input-placeholder {
+  color: #f0f0f0;
+}
+
+body.dark-theme .form__textarea::-ms-input-placeholder {
+  color: #f0f0f0;
+}
+
+body.dark-theme .form__textarea::placeholder {
+  color: #f0f0f0;
 }
 
 .form__button {

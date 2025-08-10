@@ -87,6 +87,11 @@
   outline: none;
 }
 
+body.dark-theme .form__input {
+  background-color: $color-charcoal-dt;
+  color: $color-white-dt;
+}
+
 .form__textarea {
   border-radius: 8px;
   padding: 16px;
@@ -103,9 +108,18 @@
   resize: none;
 }
 
+body.dark-theme .form__textarea {
+  background-color: $color-charcoal-dt;
+  color: $color-white-dt;
+}
+
 .form__textarea::placeholder {
-  color: rgba(233, 47, 47, 0.5);
+  color: $color-black;
   font-family: $font-family;
+}
+
+body.dark-theme .form__textarea::placeholder{
+  color: $color-white-dt;
 }
 
 .form__button {

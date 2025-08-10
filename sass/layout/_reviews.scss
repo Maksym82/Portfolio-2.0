@@ -12,6 +12,10 @@
   border-radius: 16px;
 }
 
+body.dark-theme .reviews__swiper-slide {
+  background-color: $color-charcoal-dt;
+}
+
 .reviews__text {
   font-weight: 300;
   letter-spacing: 0.03em;
@@ -74,6 +78,15 @@
   width: 40px;
   height: 40px;
   color: $color-black;
+}
+
+body.dark-theme .swiper-button-next {
+  color: $color-white-dt;
+  border: 1px solid $color-white-dt;
+}
+body.dark-theme .swiper-button-prev {
+  color: $color-white-dt;
+  border: 1px solid $color-white-dt;
 }
 
 .swiper-button-prev:active,

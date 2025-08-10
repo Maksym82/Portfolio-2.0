@@ -52,6 +52,10 @@
   border-radius: 16px;
 }
 
+body.dark-theme .accordion__item.active {
+  background-color: $color-accet-green-dt;
+}
+
 .arrow {
   transition: transform 0.4s linear;
 }
