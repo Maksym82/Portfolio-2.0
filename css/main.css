@@ -1083,6 +1083,16 @@ body.dark-theme .hero__soc-link {
   background-color: #bbb;
 }
 
+body.dark-theme .project__link {
+  color: #f0f0f0;
+  background-color: #2a2d32;
+}
+
+body.dark-theme .project__link:hover,
+body.dark-theme .project__link:focus {
+  background-color: #3b3f45;
+}
+
 #load-more {
   position: relative;
   display: block;
@@ -1101,6 +1111,15 @@ body.dark-theme .hero__soc-link {
 }
 #load-more:hover {
   color: #00b068;
+}
+
+body.dark-theme #load-more {
+  color: #f0f0f0;
+}
+
+body.dark-theme #load-more:hover,
+body.dark-theme #load-more:focus {
+  color: #14c57c;
 }
 
 #load-more::after {
