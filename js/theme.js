@@ -1,13 +1,24 @@
-// script.js
-const toggleButton = document.getElementById('theme-toggle');
+const toggleButton = document.getElementById("theme-toggle");
 
-toggleButton.addEventListener('click', () => {
-  document.body.classList.toggle('dark-theme');
+// Проверка сохранённой темы при загрузке
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  document.body.classList.add("dark-theme");
+  toggleButton.textContent = "☀️";
+} else {
+  toggleButton.textContent = "🌙";
+}
 
-  // Меняем текст кнопки
-  if (document.body.classList.contains('dark-theme')) {
-    toggleButton.textContent = '☀️';
+// Обработчик переключения темы
+toggleButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark-theme");
+
+  // Сохраняем тему и меняем иконку
+  if (document.body.classList.contains("dark-theme")) {
+    localStorage.setItem("theme", "dark");
+    toggleButton.textContent = "☀️";
   } else {
-    toggleButton.textContent = '🌙';
+    localStorage.setItem("theme", "light");
+    toggleButton.textContent = "🌙";
   }
 });
