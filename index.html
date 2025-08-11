@@ -48,21 +48,16 @@
             Hello, I am <span>Fullstack developer</span>
           </h1>
           <div class="hero__image">
-            <picture>
-              <source
-                srcset="
-                  ./images/hero/hero-desktop@1x.webp 1x,
-                  ./images/hero/hero-desktop@2x.webp 2x
-                "
-                type="image/webp"
-              />
-              <img
-                class="hero-img"
-                src="./images/hero/hero.jpg"
-                alt="Fullstack developer"
-                loading="lazy"
-              />
-            </picture>
+            <img
+              srcset="
+                ./images/hero/hero-desktop@1x.webp  592w,
+                ./images/hero/hero-desktop@2x.webp 1184w
+              "
+              sizes="(min-width: 1280px) 592px"
+              alt="Fullstack developer"
+              src="./images/hero/hero.jpg"
+              loading="lazy"
+            />
           </div>
           <a class="hero__button" href="">
             <img src="./images/hero/hero-arrow.svg" alt="arrow right" />
@@ -322,7 +317,11 @@
                 <h3 class="project__name">Wallet webservice</h3>
                 <a class="project__link" href="">
                   VISIT
-                  <img src="./images/projects/project-arrow.svg" alt="arrow" loading="lazy" />
+                  <img
+                    src="./images/projects/project-arrow.svg"
+                    alt="arrow"
+                    loading="lazy"
+                  />
                 </a>
               </div>
             </li>
@@ -361,7 +360,11 @@
                 <h3 class="project__name">Green harvest webservice</h3>
                 <a class="project__link" href="">
                   VISIT
-                  <img src="./images/projects/project-arrow.svg" alt="arrow" loading="lazy" />
+                  <img
+                    src="./images/projects/project-arrow.svg"
+                    alt="arrow"
+                    loading="lazy"
+                  />
                 </a>
               </div>
             </li>
@@ -400,7 +403,11 @@
                 <h3 class="project__name">English Exellence website</h3>
                 <a class="project__link" href="">
                   VISIT
-                  <img src="./images/projects/project-arrow.svg" alt="arrow" loading="lazy" />
+                  <img
+                    src="./images/projects/project-arrow.svg"
+                    alt="arrow"
+                    loading="lazy"
+                  />
                 </a>
               </div>
             </li>
