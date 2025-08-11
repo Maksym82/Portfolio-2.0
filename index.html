@@ -16,6 +16,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <!--Preload-->
+    <link
+      rel="preload"
+      as="image"
+      href="./images/hero/hero.jpg"
+      fetchpriority="high"
+    />
+
     <!--Styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -50,13 +58,13 @@
           <div>
             <img
               class="hero__image"
-              srcset="
-                ./images/hero/hero-desktop@1x.webp  592w
-              "
+              srcset="./images/hero/hero-desktop@1x.webp 592w"
               sizes="(min-width: 1280px) 592px"
               alt="Fullstack developer"
               src="./images/hero/hero.jpg"
-              loading="lazy"
+              fetchpriority="high"
+              width="592"
+              height="444"
             />
           </div>
           <a class="hero__button" href="">
