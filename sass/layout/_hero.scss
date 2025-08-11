@@ -196,14 +196,14 @@ body.dark-theme .hero__soc-link {
   }
 }
 
-.hero-img {
+.hero__image {
   display: none;
 }
 
 @media (min-width: 1280px) {
-  .hero-img {
+  .hero__image {
     display: block;
-    border-radius: 32px;
+    border-radius: 34px;
     width: 592px;
     height: 444px;
     margin-top: 88px;
