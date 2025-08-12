@@ -23,7 +23,7 @@
       href="./images/hero/hero.jpg"
       fetchpriority="high"
     />
-
+    <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <!--Styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -296,7 +296,7 @@
                 <source
                   srcset="
                     ./images/projects/1/projects-desktop@1x.webp 1x
-                    <!-- ./images/projects/1/projects-desktop@2x.webp 2x -->
+                    ./images/projects/1/projects-desktop@2x.webp 2x
                   "
                   media="(min-width: 1280px)"
                   type="image/webp"
@@ -304,7 +304,7 @@
                 <source
                   srcset="
                     ./images/projects/1/projects-tablet@1x.webp 1x
-                    <!-- ./images/projects/1/projects-tablet@2x.webp 2x -->
+                    ./images/projects/1/projects-tablet@2x.webp 2x
                   "
                   media="(min-width: 768px)"
                   type="image/webp"
@@ -312,7 +312,7 @@
                 <img
                   srcset="
                     ./images/projects/1/projects-mobile@1x.webp 1x
-                    <!-- ./images/projects/1/projects-mobile@2x.webp 2x -->
+                    ./images/projects/1/projects-mobile@2x.webp 2x
                   "
                   src="./images/projects/1/projects-mobile.jpg"
                   alt="Wallet webservice "
@@ -339,7 +339,7 @@
                 <source
                   srcset="
                     ./images/projects/2/2-projects-desktop@1x.webp 1x
-                    <!-- ./images/projects/2/2-projects-desktop@2x.webp 2x -->
+                    ./images/projects/2/2-projects-desktop@2x.webp 2x
                   "
                   media="(min-width: 1280px)"
                   type="image/webp"
@@ -347,7 +347,7 @@
                 <source
                   srcset="
                     ./images/projects/2/2-projects-tablet@1x.webp 1x
-                    <!-- ./images/projects/2/2-projects-tablet@2x.webp 2x -->
+                    ./images/projects/2/2-projects-tablet@2x.webp 2x
                   "
                   media="(min-width: 768px)"
                   type="image/webp"
@@ -355,7 +355,7 @@
                 <img
                   srcset="
                     ./images/projects/2/2-projects-mobile@1x.webp 1x
-                    <!-- ./images/projects/2/2-projects-mobile@2x.webp 2x -->
+                    ./images/projects/2/2-projects-mobile@2x.webp 2x
                   "
                   src="./images/projects/2/2-projects-mobile.jpg"
                   alt="Green harvest webservice"
@@ -1115,11 +1115,6 @@
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/load-more.js"></script>
-    <script src="./js/faq.js"></script>
-    <script src="./js/reviews.js"></script>
-    <script src="./js/scroll-up.js"></script>
-    <script src="./js/theme.js"></script>
+    <script src="./js/main.js" defer></script>
   </body>
 </html>
