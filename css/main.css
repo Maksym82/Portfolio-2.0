@@ -1414,10 +1414,18 @@ body.dark-theme .reviews__swiper-slide {
   position: absolute;
   border: 1px solid #292929;
   border-radius: 8px;
-  padding: 12px;
+  padding: 8px;
   width: 40px;
   height: 40px;
   color: #292929;
+}
+@media (min-width: 1280px) {
+  .swiper-button-prev {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    left: -70px;
+  }
 }
 
 .swiper-button-next {
@@ -1426,10 +1434,25 @@ body.dark-theme .reviews__swiper-slide {
   right: -100px;
   border: 1px solid #292929;
   border-radius: 8px;
-  padding: 12px;
+  padding: 8px;
   width: 40px;
   height: 40px;
   color: #292929;
+}
+@media (min-width: 1280px) {
+  .swiper-button-next {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    right: -38px;
+  }
+}
+
+.reviews__icon {
+  width: 24px;
+  height: 24px;
+  fill: transparent;
+  stroke: #292929;
 }
 
 body.dark-theme .swiper-button-next {
