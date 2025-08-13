@@ -74,6 +74,11 @@
   letter-spacing: 0.03em;
 }
 
+.contacts__icon {
+  stroke: $color-accet-green;
+  fill: transparent;
+}
+
 .form__input {
   border-radius: 8px;
   padding: 16px;

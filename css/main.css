@@ -1222,6 +1222,8 @@ body.dark-theme #load-more:focus {
   padding: 12px;
   background: #bcdfd1;
   margin-bottom: 16px;
+  stroke: #00b068;
+  fill: transparent;
 }
 
 .benefits__expertise {
@@ -1540,6 +1542,11 @@ body.dark-theme .swiper-button-prev {
   font-weight: 300;
   font-style: normal;
   letter-spacing: 0.03em;
+}
+
+.contacts__icon {
+  stroke: #00b068;
+  fill: transparent;
 }
 
 .form__input {
