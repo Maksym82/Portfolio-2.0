@@ -110,6 +110,10 @@
   }
 }
 
+.projects__icon {
+  stroke: $color-accet-green;
+}
+
 body.dark-theme .project__link {
   color: $color-white-dt;
   background-color: $color-charcoal-dt;

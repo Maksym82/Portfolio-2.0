@@ -1081,6 +1081,10 @@ body.dark-theme .hero__soc-link {
   background-color: #bbb;
 }
 
+.projects__icon {
+  stroke: #00b068;
+}
+
 body.dark-theme .project__link {
   color: #f0f0f0;
   background-color: #2a2d32;
