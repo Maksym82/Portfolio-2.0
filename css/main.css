@@ -835,7 +835,7 @@ body.dark-theme .hero__soc-link:focus {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-align: center;
-  color: #292929;
+  color: #333;
 }
 @media (min-width: 768px) {
   .about__stripe {
@@ -924,7 +924,7 @@ body.dark-theme .hero__soc-link:focus {
   top: 112px;
   left: 1px;
   right: 1px;
-  background-color: #e4e5e6;
+  background-color: #e0e0e0;
   padding: 32px 0;
   z-index: 10;
   white-space: nowrap;
@@ -1707,12 +1707,12 @@ body.dark-theme .form__textarea::placeholder {
   padding: 12px 24px;
   width: 100%;
   height: 48px;
-  background-color: #009933;
+  background-color: #007a3d;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #f0f0f0;
+  color: #fff;
   -webkit-transition: background-color 0.25s linear;
   transition: background-color 0.25s linear;
 }

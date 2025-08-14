@@ -132,12 +132,12 @@ body.dark-theme .form__textarea::placeholder{
   padding: 12px 24px;
   width: 100%;
   height: 48px;
-  background-color: $color-accet-green;
+  background-color: #007a3d;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
-  color: $color-white;
+  color: #fff;
   transition: background-color .25s linear;
 
   &:hover,
