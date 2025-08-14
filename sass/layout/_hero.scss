@@ -53,6 +53,11 @@ body.dark-theme .hero__soc-link {
   color: $color-white-dt;
 }
 
+body.dark-theme .hero__soc-link:hover,
+body.dark-theme .hero__soc-link:focus {
+  color: $color-accet-green-dt;
+}
+
 .hero__title {
   font-family: $second-family;
   font-size: 60px;

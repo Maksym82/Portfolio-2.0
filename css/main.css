@@ -460,6 +460,11 @@ body.dark-theme .hero__soc-link {
   color: #f0f0f0;
 }
 
+body.dark-theme .hero__soc-link:hover,
+body.dark-theme .hero__soc-link:focus {
+  color: #14c57c;
+}
+
 .hero__title {
   font-family: "Impact", sans-serif;
   font-size: 60px;
