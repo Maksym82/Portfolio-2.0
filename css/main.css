@@ -1313,6 +1313,11 @@ body.dark-theme #load-more:focus {
     width: 550px;
   }
 }
+@media (min-width: 1280px) {
+  .accordion__button p {
+    width: 450px;
+  }
+}
 
 .accordion__item.active {
   background-color: #bcdfd1;
