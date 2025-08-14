@@ -50,6 +50,10 @@
 
 .accordion__button p {
   width: 224px;
+
+  @media (min-width: 768px) {
+    width: 550px;
+  }
 }
 
 .accordion__item.active {
