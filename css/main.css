@@ -1305,6 +1305,10 @@ body.dark-theme #load-more:focus {
   transition: background-color 0.3s ease;
 }
 
+.accordion__button p {
+  width: 224px;
+}
+
 .accordion__item.active {
   background-color: #bcdfd1;
   border-radius: 16px;
@@ -1315,10 +1319,18 @@ body.dark-theme .accordion__item.active {
 }
 
 .arrow {
+  width: 24px;
+  height: 24px;
+  fill: transparent;
+  stroke: #292929;
   -webkit-transition: -webkit-transform 0.4s linear;
   transition: -webkit-transform 0.4s linear;
   transition: transform 0.4s linear;
   transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+}
+
+body.dark-theme .arrow {
+  stroke: #f0f0f0;
 }
 
 .accordion__content {
@@ -1453,6 +1465,10 @@ body.dark-theme .reviews__swiper-slide {
   height: 24px;
   fill: transparent;
   stroke: #292929;
+}
+
+body.dark-theme .reviews__icon {
+  stroke: #f0f0f0;
 }
 
 body.dark-theme .swiper-button-next {

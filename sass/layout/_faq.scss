@@ -48,6 +48,10 @@
   transition: background-color 0.3s ease;
 }
 
+.accordion__button p {
+  width: 224px;
+}
+
 .accordion__item.active {
   background-color: $color-light-accent;
   border-radius: 16px;
@@ -58,7 +62,15 @@ body.dark-theme .accordion__item.active {
 }
 
 .arrow {
+  width: 24px;
+  height: 24px;
+  fill: transparent;
+  stroke: $color-black;
   transition: transform 0.4s linear;
+}
+
+body.dark-theme .arrow {
+  stroke: $color-white-dt;
 }
 
 .accordion__content {

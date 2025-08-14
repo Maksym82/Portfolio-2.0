@@ -101,6 +101,10 @@ body.dark-theme .reviews__swiper-slide {
   stroke: $color-black;
 }
 
+body.dark-theme .reviews__icon {
+  stroke: $color-white-dt;
+}
+
 body.dark-theme .swiper-button-next {
   color: $color-white-dt;
   border: 1px solid $color-white-dt;
