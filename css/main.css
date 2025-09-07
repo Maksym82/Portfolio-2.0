@@ -387,6 +387,8 @@ body.dark-theme .section-title {
     height: 64px;
     background-color: #f0f0f0;
     z-index: 2;
+    -webkit-transition: left 0.3s linear;
+    transition: left 0.3s linear;
   }
   .menu-open .menu__body,
   .menu-open .menu__body::before {

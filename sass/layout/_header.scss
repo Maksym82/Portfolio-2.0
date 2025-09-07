@@ -171,6 +171,7 @@
     height: 64px;
     background-color: $color-white-dt;
     z-index: 2;
+    transition: left 0.3s linear;
   }
 
   .menu-open .menu__body,
