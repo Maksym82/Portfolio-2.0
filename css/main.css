@@ -1495,7 +1495,7 @@ body.dark-theme .reviews__swiper-slide {
 .reviews__icon {
   width: 24px;
   height: 24px;
-  fill: transparent;
+  fill: none !important;
   stroke: #292929;
 }
 
