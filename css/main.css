@@ -1168,7 +1168,7 @@ body.dark-theme #load-more:focus {
 @media (min-width: 1280px) {
   .benefits {
     padding-bottom: 164px;
-    background-image: url("../../images/benefits/benefits-decor.svg");
+    background-image: url("../images/benefits/benefits-decor.svg");
     background-repeat: no-repeat;
     background-size: 526px 408px;
     background-position: top 20px right 20px;
@@ -1279,7 +1279,7 @@ body.dark-theme #load-more:focus {
 @media (min-width: 1280px) {
   .faq {
     padding-bottom: 164px;
-    background-image: url("../../images/faq/faq-desktop-decor.svg");
+    background-image: url("../images/faq/faq-desktop-decor.svg");
     background-repeat: no-repeat;
     background-size: 526px 408px;
     background-position: bottom 164px left 100px;
@@ -1526,7 +1526,7 @@ body.dark-theme .swiper-button-prev {
   .contacts {
     padding-top: 124px;
     padding-bottom: 124px;
-    background-image: url("../../images/contacts/contacts-decor.svg");
+    background-image: url("../images/contacts/contacts-decor.svg");
     background-repeat: no-repeat;
     background-size: 336px 260px;
     background-position: top 100px right 30px;
